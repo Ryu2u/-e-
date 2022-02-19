@@ -22,80 +22,77 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="986f13e1-aeb7-4342-9b3f-62ed727539bf" name="Default Changelist" comment="yeb-service">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_18_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_2_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_2_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_2_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/config/security/JwtTokenUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/domain/RespBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_13_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_10_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_13_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_10_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_13_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_10_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_13_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_10_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_13_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_10_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_13_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_10_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_4_0_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_4_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_11_22.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_17_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_12_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_17_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_12_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_56.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_31.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_56.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_31.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_56.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_31.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_31.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_29.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_22.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_12.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_33.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_33.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_6_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_6_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_6_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_2_5_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_6_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_6_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_6_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_2_5_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_6_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_6_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_3_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_3_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_3_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_3_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_3_15.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_2_4_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_3_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_3_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_3_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_29.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_25.xml" afterDir="false" />
+    <list default="true" id="986f13e1-aeb7-4342-9b3f-62ed727539bf" name="Default Changelist" comment="创建了jwt的工具类,和公共的返回的对象">
+      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/config/Swagger2Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/config/security/JwtAuthorizationHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/config/security/RestAuthorizationEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/config/security/RestfulAccessDeniedHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/config/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/domain/AdminLoginParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/登录相关的流程.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/resources/config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/resources/config/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/config/security/JwtTokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/config/security/JwtTokenUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/domain/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/domain/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/service/IAdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/service/IAdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/service/impl/AdminServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/test/java/com/ryuzu/server/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/test/java/com/ryuzu/server/MyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/AdminRoleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/AdminRoleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/AppraiseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/AppraiseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/DepartmentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/DepartmentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/EmployeeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/EmployeeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/EmployeeEcController.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/EmployeeEcController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/EmployeeRemoveController.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/EmployeeRemoveController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/EmployeeTrainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/EmployeeTrainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/JoblevelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/JoblevelController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/MailLogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/MailLogController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/MenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/MenuController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/MenuRoleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/MenuRoleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/NationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/NationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/OplogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/OplogController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/PoliticsStatusController.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/PoliticsStatusController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/PositionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/PositionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/RoleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/RoleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/SalaryAdjustController.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/SalaryAdjustController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/SalaryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/SalaryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/SysMsgContentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/SysMsgContentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/SysMsgController.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/SysMsgController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Department.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Department.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/EmployeeEc.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/EmployeeEc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Joblevel.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Joblevel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/MailLog.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/MailLog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Oplog.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Oplog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Position.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Salary.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Salary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/SalaryAdjust.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/SalaryAdjust.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/impl/SysMsgContentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/impl/SysMsgContentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/config/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/mapper/AdminMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/AdminRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/mapper/AdminRoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/AppraiseMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/mapper/AppraiseMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/DepartmentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/mapper/DepartmentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/EmployeeEcMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/mapper/EmployeeEcMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/EmployeeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/mapper/EmployeeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/EmployeeRemoveMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/mapper/EmployeeRemoveMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/EmployeeTrainMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/mapper/EmployeeTrainMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/JoblevelMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/mapper/JoblevelMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/MailLogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/mapper/MailLogMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/MenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/mapper/MenuMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/MenuRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/mapper/MenuRoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/NationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/mapper/NationMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/OplogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/mapper/OplogMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/PoliticsStatusMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/mapper/PoliticsStatusMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/PositionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/mapper/PositionMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/RoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/mapper/RoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/SalaryAdjustMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/mapper/SalaryAdjustMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/SalaryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/mapper/SalaryMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/SysMsgContentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/mapper/SysMsgContentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/SysMsgMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/mapper/SysMsgMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,6 +134,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -164,7 +165,7 @@
       <recent name="D:\IDEA\yeb\yeb-server\src\main\resources\config" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.YebApplication">
     <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ryuzu.server.generator.CodeGenerator" />
       <module name="yeb-generator" />
@@ -178,19 +179,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="YebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="yeb-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ryuzu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ryuzu.YebApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.YebApplication" />
         <item itemvalue="Application.CodeGenerator" />
       </list>
     </recent_temporary>
@@ -209,7 +226,8 @@
       <workItem from="1644842226464" duration="6589000" />
       <workItem from="1644916945660" duration="557000" />
       <workItem from="1644917510005" duration="161000" />
-      <workItem from="1645166307468" duration="7223000" />
+      <workItem from="1645166307468" duration="16497000" />
+      <workItem from="1645247960980" duration="14137000" />
     </task>
     <task id="LOCAL-00001" summary="yeb-service">
       <created>1644917450833</created>
@@ -218,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644917450833</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="创建了jwt的工具类,和公共的返回的对象">
+      <created>1645182170628</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1645182170628</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,16 +259,18 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="yeb-service" />
-    <option name="LAST_COMMIT_MESSAGE" value="yeb-service" />
+    <MESSAGE value="创建了jwt的工具类,和公共的返回的对象" />
+    <option name="LAST_COMMIT_MESSAGE" value="创建了jwt的工具类,和公共的返回的对象" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1644847967452">
+    <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1645259512896">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1644847967452" />
+    <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1645259512896" />
     <state x="765" y="442" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1644849294145">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -260,22 +287,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="804" y="195" key="FileChooserDialogImpl/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1644917185305" />
-    <state width="1877" height="276" key="GridCell.Tab.0.bottom" timestamp="1644849915862">
+    <state width="1877" height="396" key="GridCell.Tab.0.bottom" timestamp="1645261682893">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="276" key="GridCell.Tab.0.bottom/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1644849915862" />
-    <state width="1877" height="276" key="GridCell.Tab.0.center" timestamp="1644849915862">
+    <state width="1877" height="396" key="GridCell.Tab.0.bottom/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1645261682893" />
+    <state width="1877" height="396" key="GridCell.Tab.0.center" timestamp="1645261682893">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="276" key="GridCell.Tab.0.center/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1644849915862" />
-    <state width="1877" height="276" key="GridCell.Tab.0.left" timestamp="1644849915862">
+    <state width="1877" height="396" key="GridCell.Tab.0.center/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1645261682893" />
+    <state width="1877" height="396" key="GridCell.Tab.0.left" timestamp="1645261682893">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="276" key="GridCell.Tab.0.left/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1644849915862" />
-    <state width="1877" height="276" key="GridCell.Tab.0.right" timestamp="1644849915862">
+    <state width="1877" height="396" key="GridCell.Tab.0.left/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1645261682893" />
+    <state width="1877" height="396" key="GridCell.Tab.0.right" timestamp="1645261682893">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="276" key="GridCell.Tab.0.right/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1644849915862" />
+    <state width="1877" height="396" key="GridCell.Tab.0.right/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1645261682893" />
+    <state width="1877" height="396" key="GridCell.Tab.1.bottom" timestamp="1645261682893">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="396" key="GridCell.Tab.1.bottom/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1645261682893" />
+    <state width="1877" height="396" key="GridCell.Tab.1.center" timestamp="1645261682893">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="396" key="GridCell.Tab.1.center/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1645261682893" />
+    <state width="1877" height="396" key="GridCell.Tab.1.left" timestamp="1645261682893">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="396" key="GridCell.Tab.1.left/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1645261682893" />
+    <state width="1877" height="396" key="GridCell.Tab.1.right" timestamp="1645261682893">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="396" key="GridCell.Tab.1.right/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1645261682893" />
     <state x="664" y="192" key="NewModule_or_Project.wizard" timestamp="1644834122405">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -284,10 +327,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="121" width="1221" height="736" key="SettingsEditor/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1645169725600" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1644917474315">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1645182179908">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1644917474315" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1645182179908" />
     <state x="764" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1645169735298">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -296,10 +339,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="334" y="180" key="new project wizard/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1644845561001" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1645170578508">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1645187676847">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1645170578508" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1645187676847" />
     <state x="790" y="310" key="svn.repositoryBrowser" timestamp="1644917548128">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
