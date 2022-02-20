@@ -22,13 +22,142 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="986f13e1-aeb7-4342-9b3f-62ed727539bf" name="Default Changelist" comment="swagger2接口文档的配置">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_axet_kaptcha_0_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jhlabs_filters_2_0_235.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/config/CaptchaConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/controller/CaptchaController.java" afterDir="false" />
+    <list default="true" id="986f13e1-aeb7-4342-9b3f-62ed727539bf" name="Default Changelist" comment="google kaptcha 验证码功能">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/config/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/config/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/domain/AdminLoginParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/domain/AdminLoginParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/service/IAdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/service/IAdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/service/impl/AdminServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/YebApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/AdminController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/AdminRoleController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/AppraiseController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/DepartmentController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/EmployeeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/EmployeeEcController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/EmployeeRemoveController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/EmployeeTrainController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/JoblevelController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/MailLogController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/MenuController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/MenuRoleController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/NationController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/OplogController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/PoliticsStatusController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/PositionController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/RoleController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/SalaryAdjustController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/SalaryController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/SysMsgContentController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/SysMsgController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Admin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/AdminRole.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Appraise.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Department.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/EmployeeEc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/EmployeeRemove.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/EmployeeTrain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Joblevel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/MailLog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Menu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/MenuRole.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Nation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Oplog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/PoliticsStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Position.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Salary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/SalaryAdjust.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/SysMsg.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/SysMsgContent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/mapper/AdminMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/mapper/AdminRoleMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/mapper/AppraiseMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/mapper/DepartmentMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/mapper/EmployeeEcMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/mapper/EmployeeMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/mapper/EmployeeRemoveMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/mapper/EmployeeTrainMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/mapper/JoblevelMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/mapper/MailLogMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/mapper/MenuMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/mapper/MenuRoleMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/mapper/NationMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/mapper/OplogMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/mapper/PoliticsStatusMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/mapper/PositionMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/mapper/RoleMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/mapper/SalaryAdjustMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/mapper/SalaryMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/mapper/SysMsgContentMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/mapper/SysMsgMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/IAdminRoleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/IAdminService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/IAppraiseService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/IDepartmentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/IEmployeeEcService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/IEmployeeRemoveService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/IEmployeeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/IEmployeeTrainService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/IJoblevelService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/IMailLogService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/IMenuRoleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/IMenuService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/INationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/IOplogService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/IPoliticsStatusService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/IPositionService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/IRoleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/ISalaryAdjustService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/ISalaryService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/ISysMsgContentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/ISysMsgService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/impl/AdminRoleServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/impl/AdminServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/impl/AppraiseServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/impl/DepartmentServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/impl/EmployeeEcServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/impl/EmployeeRemoveServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/impl/EmployeeServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/impl/EmployeeTrainServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/impl/JoblevelServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/impl/MailLogServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/impl/MenuRoleServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/impl/MenuServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/impl/NationServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/impl/OplogServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/impl/PoliticsStatusServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/impl/PositionServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/impl/RoleServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/impl/SalaryAdjustServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/impl/SalaryServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/impl/SysMsgContentServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/impl/SysMsgServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/config/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/AdminMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/AdminRoleMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/AppraiseMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/DepartmentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/EmployeeEcMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/EmployeeMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/EmployeeRemoveMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/EmployeeTrainMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/JoblevelMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/MailLogMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/MenuMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/MenuRoleMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/NationMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/OplogMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/PoliticsStatusMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/PositionMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/RoleMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/SalaryAdjustMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/SalaryMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/SysMsgContentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/SysMsgMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/test-classes/com/ryuzu/server/MyTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +298,7 @@
       <workItem from="1644917510005" duration="161000" />
       <workItem from="1645166307468" duration="16497000" />
       <workItem from="1645247960980" duration="20742000" />
-      <workItem from="1645343886601" duration="8074000" />
+      <workItem from="1645343886601" duration="9985000" />
     </task>
     <task id="LOCAL-00001" summary="yeb-service">
       <created>1644917450833</created>
@@ -199,7 +328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645347775987</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="google kaptcha 验证码功能">
+      <created>1645355133956</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1645355133956</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,7 +358,8 @@
     <MESSAGE value="创建了jwt的工具类,和公共的返回的对象" />
     <MESSAGE value="spring security 以及jwt 的配置" />
     <MESSAGE value="swagger2接口文档的配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="swagger2接口文档的配置" />
+    <MESSAGE value="google kaptcha 验证码功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="google kaptcha 验证码功能" />
   </component>
   <component name="WindowStateProjectService">
     <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1645275561748">
@@ -245,46 +382,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="804" y="195" key="FileChooserDialogImpl/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1644917185305" />
-    <state width="1368" height="339" key="GridCell.Tab.0.bottom" timestamp="1645355110156">
+    <state width="1493" height="439" key="GridCell.Tab.0.bottom" timestamp="1645357227473">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1877" height="433" key="GridCell.Tab.0.bottom/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1645286161242" />
-    <state width="1368" height="339" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1645355110156" />
-    <state width="1368" height="339" key="GridCell.Tab.0.center" timestamp="1645355110156">
+    <state width="1493" height="439" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1645357227473" />
+    <state width="1493" height="439" key="GridCell.Tab.0.center" timestamp="1645357227473">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1877" height="433" key="GridCell.Tab.0.center/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1645286161242" />
-    <state width="1368" height="339" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1645355110156" />
-    <state width="1368" height="339" key="GridCell.Tab.0.left" timestamp="1645355110155">
+    <state width="1493" height="439" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1645357227473" />
+    <state width="1493" height="439" key="GridCell.Tab.0.left" timestamp="1645357227473">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1877" height="433" key="GridCell.Tab.0.left/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1645286161242" />
-    <state width="1368" height="339" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1645355110155" />
-    <state width="1368" height="339" key="GridCell.Tab.0.right" timestamp="1645355110156">
+    <state width="1493" height="439" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1645357227473" />
+    <state width="1493" height="439" key="GridCell.Tab.0.right" timestamp="1645357227473">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1877" height="433" key="GridCell.Tab.0.right/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1645286161242" />
-    <state width="1368" height="339" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1645355110156" />
-    <state width="1368" height="339" key="GridCell.Tab.1.bottom" timestamp="1645355110156">
+    <state width="1493" height="439" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1645357227473" />
+    <state width="1368" height="181" key="GridCell.Tab.1.bottom" timestamp="1645357090685">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1877" height="433" key="GridCell.Tab.1.bottom/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1645286161229" />
-    <state width="1368" height="339" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1645355110156" />
-    <state width="1368" height="339" key="GridCell.Tab.1.center" timestamp="1645355110156">
+    <state width="1368" height="181" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1645357090685" />
+    <state width="1368" height="181" key="GridCell.Tab.1.center" timestamp="1645357090685">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1877" height="433" key="GridCell.Tab.1.center/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1645286161229" />
-    <state width="1368" height="339" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1645355110156" />
-    <state width="1368" height="339" key="GridCell.Tab.1.left" timestamp="1645355110156">
+    <state width="1368" height="181" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1645357090685" />
+    <state width="1368" height="181" key="GridCell.Tab.1.left" timestamp="1645357090685">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1877" height="433" key="GridCell.Tab.1.left/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1645286161229" />
-    <state width="1368" height="339" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1645355110156" />
-    <state width="1368" height="339" key="GridCell.Tab.1.right" timestamp="1645355110156">
+    <state width="1368" height="181" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1645357090685" />
+    <state width="1368" height="181" key="GridCell.Tab.1.right" timestamp="1645357090685">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1877" height="433" key="GridCell.Tab.1.right/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1645286161229" />
-    <state width="1368" height="339" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1645355110156" />
+    <state width="1368" height="181" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1645357090685" />
     <state x="664" y="192" key="NewModule_or_Project.wizard" timestamp="1644834122405">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -293,11 +430,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="121" width="1221" height="736" key="SettingsEditor/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1645169725600" />
-    <state x="442" y="200" key="Vcs.Push.Dialog.v2" timestamp="1645347834779">
+    <state x="442" y="200" key="Vcs.Push.Dialog.v2" timestamp="1645355139105">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1645274966548" />
-    <state x="442" y="200" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1645347834779" />
+    <state x="442" y="200" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1645355139105" />
     <state x="764" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1645169735298">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

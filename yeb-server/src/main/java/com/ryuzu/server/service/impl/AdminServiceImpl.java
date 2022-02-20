@@ -54,8 +54,12 @@ public class AdminServiceImpl extends ServiceImpl<AdminMapper, Admin> implements
      * @return
      */
     @Override
-    public RespBean login(String username, String password, HttpServletRequest request) {
-
+    public RespBean login(String username, String password,String code, HttpServletRequest request) {
+        //验证 验证码是否正确
+        String captcha = (String) request.getSession().getAttribute("captcha");
+        if (captcha == null || !code.equalsIgnoreCase(captcha)) {
+            return RespBean.error("验证码错误,请重新输入");
+        }
         // 根据用户名获取userDetails
         UserDetails userDetails = userDetailsService.loadUserByUsername(username);
 
