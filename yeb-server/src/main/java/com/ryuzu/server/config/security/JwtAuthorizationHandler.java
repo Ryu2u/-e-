@@ -7,8 +7,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.web.filter.OncePerRequestFilter;
-import org.springframework.web.servlet.HandlerInterceptor;
-import org.springframework.web.servlet.ModelAndView;
+
 
 import javax.annotation.Resource;
 import javax.servlet.FilterChain;
@@ -44,7 +43,7 @@ public class JwtAuthorizationHandler extends OncePerRequestFilter {
     protected void doFilterInternal(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, FilterChain filterChain) throws ServletException, IOException {
         String header = httpServletRequest.getHeader(tokenHeader);
         // 判断header 是否存在, 是否是以tokenHead 开头的
-        if (header != null || header.startsWith(tokenHead)) {
+        if (header != null && header.startsWith(tokenHead)) {
             // 头部有效
             String token = header.substring(tokenHead.length() + 1);
 
