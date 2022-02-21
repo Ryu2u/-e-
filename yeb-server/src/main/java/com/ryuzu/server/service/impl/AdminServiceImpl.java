@@ -3,12 +3,14 @@ package com.ryuzu.server.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.ryuzu.server.config.security.JwtTokenUtil;
 import com.ryuzu.server.domain.Admin;
+import com.ryuzu.server.domain.Menu;
 import com.ryuzu.server.domain.RespBean;
 import com.ryuzu.server.mapper.AdminMapper;
 import com.ryuzu.server.service.IAdminService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -18,6 +20,7 @@ import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -45,6 +48,8 @@ public class AdminServiceImpl extends ServiceImpl<AdminMapper, Admin> implements
 
     @Value("${jwt.tokenHead}")
     private String tokenHead;
+
+
 
     /**
      * 登录验证并生成token

@@ -53,7 +53,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 return admin;
             }
         };
-
     }
 
     @Override
