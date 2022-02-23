@@ -31,12 +31,38 @@
         </collection>
     </resultMap>
 
+    <resultMap id="Menus_Role" type="com.ryuzu.server.domain.Menu" extends="BaseResultMap">
+        <collection property="roles" ofType="com.ryuzu.server.domain.Role">
+            <id column="rid" property="id"/>
+            <result column="roleName" property="name"/>
+            <result column="roleNameZh" property="nameZh"/>
+        </collection>
+    </resultMap>
+
 
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
         id, url, path, component, name, iconCls, keepAlive, requireAuth, parentId, enabled
     </sql>
+
+    <select id="getMenuByRole" resultMap="Menus_Role">
+        SELECT DISTINCT
+            m.*,
+            r.id as rid,
+            r.`name` as roleName,
+            r.nameZh as roleNameZh
+        FROM
+            t_menu m,
+            t_role r,
+            t_menu_role mr
+        WHERE
+            m.id = mr.mid
+          and
+            r.id = mr.rid
+        ORDER BY
+            m.id
+    </select>
 
     <select id="getMenuByAdminId" resultMap="Menus">
         SELECT DISTINCT
@@ -62,6 +88,8 @@
         and ar.rid = mr.rid
         and ar.adminId = #{id}
         and m2.enabled = TRUE
+        ORDER BY
+            m2.id
     </select>
 
 

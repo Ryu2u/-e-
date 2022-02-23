@@ -12,6 +12,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @MapperScan(basePackages = "com.ryuzu.server.mapper")
 public class YebApplication {
     public static void main(String[] args) {
+
         SpringApplication.run(YebApplication.class, args);
+
     }
 }

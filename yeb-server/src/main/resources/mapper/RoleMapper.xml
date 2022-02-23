@@ -14,4 +14,16 @@
         id, name, nameZh
     </sql>
 
+    <select id="getRolesByAdminId" resultType="com.ryuzu.server.domain.Role">
+        SELECT
+            r.*
+        from
+            t_role r,
+            t_admin_role ar
+        WHERE
+            r.id = ar.rid
+          and
+            ar.adminId = #{adminId}
+    </select>
+
 </mapper>

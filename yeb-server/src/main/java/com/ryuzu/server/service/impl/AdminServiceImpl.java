@@ -5,9 +5,12 @@ import com.ryuzu.server.config.security.JwtTokenUtil;
 import com.ryuzu.server.domain.Admin;
 import com.ryuzu.server.domain.Menu;
 import com.ryuzu.server.domain.RespBean;
+import com.ryuzu.server.domain.Role;
 import com.ryuzu.server.mapper.AdminMapper;
+import com.ryuzu.server.mapper.RoleMapper;
 import com.ryuzu.server.service.IAdminService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import io.swagger.models.auth.In;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContext;
@@ -48,6 +51,9 @@ public class AdminServiceImpl extends ServiceImpl<AdminMapper, Admin> implements
 
     @Value("${jwt.tokenHead}")
     private String tokenHead;
+
+    @Resource
+    private RoleMapper roleMapper;
 
 
 
@@ -103,5 +109,13 @@ public class AdminServiceImpl extends ServiceImpl<AdminMapper, Admin> implements
         }
 
         return admin;
+    }
+
+    @Override
+    public List<Role> getRolesByAdminId(Integer adminId) {
+
+        List<Role> roles = roleMapper.getRolesByAdminId(adminId);
+
+        return roles;
     }
 }

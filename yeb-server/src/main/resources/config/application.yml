@@ -24,6 +24,18 @@ spring:
       connection-timeout: 30000
       # 测试连接是否可用的查询语句
       connection-test-query: SELECT 1
+  # redis 配置
+  redis:
+    host: 192.168.153.128
+    port: 6379
+    password: 152833
+    lettuce:
+      pool:
+        max-active: 1024
+        max-wait: 10000
+        max-idle: 200
+        min-idle: 4
+    timeout: 10000
 
 # mybatis-plus配置
 mybatis-plus:
@@ -49,3 +61,4 @@ jwt:
   expiration: 604800
   # JWT 负载中拿到开头
   tokenHead: Bearer
+

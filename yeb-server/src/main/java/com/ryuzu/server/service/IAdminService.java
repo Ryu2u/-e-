@@ -2,8 +2,8 @@ package com.ryuzu.server.service;
 
 import com.ryuzu.server.domain.Admin;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.ryuzu.server.domain.Menu;
 import com.ryuzu.server.domain.RespBean;
+import com.ryuzu.server.domain.Role;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
@@ -33,6 +33,8 @@ public interface IAdminService extends IService<Admin> {
      * @return
      */
     Admin getAdminByUsername(String username);
+
+    List<Role> getRolesByAdminId(Integer adminId);
 
 
 }
