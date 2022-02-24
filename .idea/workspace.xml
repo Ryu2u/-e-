@@ -22,23 +22,26 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="986f13e1-aeb7-4342-9b3f-62ed727539bf" name="Default Changelist" comment="创建了redis的缓存设置&#10;和&#10;用户访问url的角色权限拦截">
-      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/controller/PermissionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/exception/GlobalException.java" afterDir="false" />
+    <list default="true" id="986f13e1-aeb7-4342-9b3f-62ed727539bf" name="Default Changelist" comment="权限组控制器和全局处理异常">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/controller/JoblevelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/controller/JoblevelController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/controller/PositionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/controller/PositionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/domain/Joblevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/domain/Joblevel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/domain/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/domain/Position.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/mapper/MenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/mapper/MenuMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/service/IMenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/service/IMenuService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/service/impl/MenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/service/impl/MenuServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/resources/mapper/MenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/resources/mapper/MenuMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/JoblevelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/JoblevelController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/PositionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/PositionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Joblevel.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Joblevel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Position.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/yeb-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/yeb-server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/config/security/JwtAuthorizationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/config/security/JwtAuthorizationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/controller/DepartmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/controller/DepartmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/controller/PermissionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/controller/PermissionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/domain/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/domain/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/mapper/DepartmentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/mapper/DepartmentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/mapper/MenuRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/mapper/MenuRoleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/service/IDepartmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/service/IDepartmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/service/IMenuRoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/service/IMenuRoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/service/impl/DepartmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/service/impl/DepartmentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/service/impl/MenuRoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/service/impl/MenuRoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/resources/mapper/DepartmentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/resources/mapper/DepartmentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/resources/mapper/MenuRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/resources/mapper/MenuRoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/test/java/com/ryuzu/server/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/test/java/com/ryuzu/server/MyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/mapper/MenuRoleMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/mapper/MenuRoleMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/IMenuRoleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/IMenuRoleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/impl/MenuRoleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/impl/MenuRoleServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/MenuRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/mapper/MenuRoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/test-classes/com/ryuzu/server/MyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/test-classes/com/ryuzu/server/MyTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,6 +143,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MyTest.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="yeb-server" />
       <extension name="coverage">
@@ -167,6 +181,22 @@
       <option name="PACKAGE_NAME" value="com.ryuzu.server" />
       <option name="MAIN_CLASS_NAME" value="com.ryuzu.server.MyTest" />
       <option name="METHOD_NAME" value="test02" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest.test03" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="yeb-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ryuzu.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ryuzu.server" />
+      <option name="MAIN_CLASS_NAME" value="com.ryuzu.server.MyTest" />
+      <option name="METHOD_NAME" value="test03" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -202,10 +232,12 @@
       <item itemvalue="JUnit.MyTest.test02" />
       <item itemvalue="npm.serve" />
       <item itemvalue="Spring Boot.YebApplication" />
+      <item itemvalue="JUnit.MyTest.test03" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.YebApplication" />
+        <item itemvalue="JUnit.MyTest.test03" />
         <item itemvalue="JUnit.MyTest.test02" />
         <item itemvalue="JUnit.MyTest.test01" />
         <item itemvalue="Application.CodeGenerator" />
@@ -237,7 +269,7 @@
       <workItem from="1645628209310" duration="2868000" />
       <workItem from="1645631101818" duration="4000" />
       <workItem from="1645674050481" duration="4735000" />
-      <workItem from="1645682543496" duration="6461000" />
+      <workItem from="1645682543496" duration="17609000" />
     </task>
     <task id="LOCAL-00001" summary="yeb-service">
       <created>1644917450833</created>
@@ -295,7 +327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645624341881</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="权限组控制器和全局处理异常">
+      <created>1645698338511</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1645698338511</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,7 +361,8 @@
     <MESSAGE value="校验验证码功能" />
     <MESSAGE value="使用用户id查询菜单列表" />
     <MESSAGE value="创建了redis的缓存设置&#10;和&#10;用户访问url的角色权限拦截" />
-    <option name="LAST_COMMIT_MESSAGE" value="创建了redis的缓存设置&#10;和&#10;用户访问url的角色权限拦截" />
+    <MESSAGE value="权限组控制器和全局处理异常" />
+    <option name="LAST_COMMIT_MESSAGE" value="权限组控制器和全局处理异常" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

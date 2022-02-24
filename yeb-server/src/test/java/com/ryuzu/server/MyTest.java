@@ -1,7 +1,10 @@
 package com.ryuzu.server;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.ryuzu.server.domain.Menu;
+import com.ryuzu.server.domain.MenuRole;
 import com.ryuzu.server.domain.Role;
+import com.ryuzu.server.mapper.MenuRoleMapper;
 import com.ryuzu.server.service.IMenuService;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -20,6 +23,9 @@ public class MyTest {
 
     @Resource
     private IMenuService menuService;
+
+    @Resource
+    private MenuRoleMapper menuRoleMapper;
 
 
     @Test
@@ -47,6 +53,14 @@ public class MyTest {
             }
 
         }
+
+    }
+
+    @Test
+    public void test03(){
+        List<MenuRole> rid = menuRoleMapper.selectList(new QueryWrapper<MenuRole>().eq("rid", 4));
+        System.out.println(rid.size());
+        rid.forEach(System.out::println);
 
     }
 

@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
 
 /**
  * 权限组控制器
- *
+ * declare concat
  * @author Ryuzu
  * @date 2022/2/24 14:37
  */
@@ -41,7 +41,7 @@ public class PermissionController {
     }
 
     @ApiOperation(value = "添加角色")
-    @PostMapping("/")
+    @PostMapping("/role")
     public RespBean addRole(@RequestBody Role role) {
         if (!role.getName().startsWith("ROLE_")) {
             role.setName("ROLE_" + role.getName());
@@ -72,7 +72,13 @@ public class PermissionController {
     @GetMapping("/menu/{rid}")
     public List<Integer> getMenuIdById(@PathVariable Integer rid) {
         List<MenuRole> menuIdList = menuRoleService.list(new QueryWrapper<MenuRole>().eq("rid", rid));
-        List<Integer> idList = menuIdList.stream().map(MenuRole::getId).collect(Collectors.toList());
+        List<Integer> idList = menuIdList.stream().map(MenuRole::getMid).collect(Collectors.toList());
         return idList;
+    }
+
+    @ApiOperation(value = "更新角色菜单")
+    @PutMapping("/menu/update")
+    public RespBean updateMenuAndRole(Integer rid,Integer [] mids){
+        return menuRoleService.updateMenuAndRole(rid, mids);
     }
 }

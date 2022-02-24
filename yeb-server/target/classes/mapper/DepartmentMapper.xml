@@ -12,9 +12,25 @@
         <result column="isParent" property="isParent" />
     </resultMap>
 
+    <resultMap id="AllDepartment" type="com.ryuzu.server.domain.Department" extends="BaseResultMap">
+        <collection property="childDept" ofType="com.ryuzu.server.domain.Department"
+                    select="com.ryuzu.server.mapper.DepartmentMapper.getAllDepartment" column="id">
+
+        </collection>
+    </resultMap>
+
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
         id, name, parentId, depPath, enabled, isParent
     </sql>
+
+    <select id="getAllDepartment" resultMap="AllDepartment">
+        select
+        <include refid="Base_Column_List"/>
+        from
+        t_department
+        where
+        parentId = #{parentId}
+    </select>
 
 </mapper>
