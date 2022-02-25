@@ -2,6 +2,7 @@ package com.ryuzu.server.service;
 
 import com.ryuzu.server.domain.Department;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.ryuzu.server.domain.RespBean;
 
 import java.util.List;
 
@@ -20,4 +21,8 @@ public interface IDepartmentService extends IService<Department> {
      * @return
      */
     List<Department> getAllDepartment(Integer parentId);
+
+    void addDepartment(Department department);
+
+    RespBean deleteDepartment(Integer id);
 }

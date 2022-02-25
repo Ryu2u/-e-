@@ -4,12 +4,12 @@
 
     <!-- 通用查询映射结果 -->
     <resultMap id="BaseResultMap" type="com.ryuzu.server.domain.Department">
-        <id column="id" property="id" />
-        <result column="name" property="name" />
-        <result column="parentId" property="parentId" />
-        <result column="depPath" property="depPath" />
-        <result column="enabled" property="enabled" />
-        <result column="isParent" property="isParent" />
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="parentId" property="parentId"/>
+        <result column="depPath" property="depPath"/>
+        <result column="enabled" property="enabled"/>
+        <result column="isParent" property="isParent"/>
     </resultMap>
 
     <resultMap id="AllDepartment" type="com.ryuzu.server.domain.Department" extends="BaseResultMap">
@@ -21,7 +21,8 @@
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-        id, name, parentId, depPath, enabled, isParent
+        id
+        , name, parentId, depPath, enabled, isParent
     </sql>
 
     <select id="getAllDepartment" resultMap="AllDepartment">
@@ -31,6 +32,19 @@
         t_department
         where
         parentId = #{parentId}
+    </select>
+
+    <select id="addDepartment" statementType="CALLABLE">
+        call addDept(#{name,mode=IN,jdbcType=VARCHAR},
+            #{parentId,mode=IN,jdbcType=INTEGER},
+            #{enabled,mode=IN,jdbcType=BOOLEAN},
+            #{result,mode=OUT,jdbcType=INTEGER},
+            #{id,mode=OUT,jdbcType=INTEGER})
+    </select>
+
+    <select id="deleteDepartment" statementType="CALLABLE">
+        call deleteDept(#{id,mode=IN,jdbcType=INTEGER},
+                        #{result,mode=OUT,jdbcType=INTEGER})
     </select>
 
 </mapper>

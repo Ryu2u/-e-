@@ -17,4 +17,11 @@ import java.util.List;
 public interface AdminMapper extends BaseMapper<Admin> {
 
 
+    /**
+     * 获取所有操作员
+     * @param adminId
+     * @param keywords
+     * @return
+     */
+    List<Admin> getAllAdmin(Integer adminId, String keywords);
 }

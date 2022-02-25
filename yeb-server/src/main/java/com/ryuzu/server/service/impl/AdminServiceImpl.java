@@ -10,6 +10,7 @@ import com.ryuzu.server.mapper.AdminMapper;
 import com.ryuzu.server.mapper.RoleMapper;
 import com.ryuzu.server.service.IAdminService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.ryuzu.server.util.AdminUtils;
 import io.swagger.models.auth.In;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -117,5 +118,18 @@ public class AdminServiceImpl extends ServiceImpl<AdminMapper, Admin> implements
         List<Role> roles = roleMapper.getRolesByAdminId(adminId);
 
         return roles;
+    }
+
+    /**
+     * 获取所有操作员
+     * @param keywords
+     * @return
+     */
+    @Override
+    public List<Admin> getAllAdmin(String keywords) {
+        Admin admin = AdminUtils.getCurrentAdmin();
+        Integer adminId = admin.getId();
+        List<Admin> allAdmin = adminMapper.getAllAdmin(adminId, keywords);
+        return allAdmin;
     }
 }

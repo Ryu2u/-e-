@@ -13,4 +13,11 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  */
 public interface AdminRoleMapper extends BaseMapper<AdminRole> {
 
+    /**
+     * 更新操作员角色
+     * @param adminId
+     * @param rids
+     * @return
+     */
+    Integer addAdmin(Integer adminId, Integer[] rids);
 }

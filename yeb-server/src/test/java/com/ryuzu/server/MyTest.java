@@ -11,6 +11,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 
 import javax.annotation.Resource;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -63,5 +65,13 @@ public class MyTest {
         rid.forEach(System.out::println);
 
     }
+
+    @Test
+    public void test04(){
+        LocalDate parse = LocalDate.parse("2012-12-12", DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+        System.out.println(parse);
+
+    }
+
 
 }

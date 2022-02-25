@@ -2,6 +2,7 @@ package com.ryuzu.server.service;
 
 import com.ryuzu.server.domain.AdminRole;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.ryuzu.server.domain.RespBean;
 
 /**
  * <p>
@@ -13,4 +14,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface IAdminRoleService extends IService<AdminRole> {
 
+    RespBean addAdmin(Integer adminId, Integer[] rids);
 }

@@ -16,10 +16,39 @@
         <result column="remark" property="remark" />
     </resultMap>
 
+    <resultMap id="AdminWithRoles" type="com.ryuzu.server.domain.Admin" extends="BaseResultMap">
+        <collection property="roles" ofType="com.ryuzu.server.domain.Role">
+            <id column="rid" property="id"/>
+            <result column="rname" property="name"/>
+            <result column="rnameZh" property="nameZh"/>
+        </collection>
+    </resultMap>
+
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
         id, name, phone, telephone, address, enabled, username, password, userFace, remark
     </sql>
+
+    <select id="getAllAdmin" resultMap="AdminWithRoles">
+        SELECT
+            a.*,
+            r.id AS rid,
+            r.NAME AS rname,
+            r.nameZh AS rnameZh
+        FROM
+            t_admin a,
+            t_role r,
+            t_admin_role ar
+        WHERE
+            a.id = ar.adminId
+          AND r.id = ar.rid
+          AND a.id != #{adminId}
+        <if test="keywords != null and keywords != ''">
+            AND a.`name` LIKE CONCAT( '%', #{keywords}, '%' )
+        </if>
+        ORDER BY
+            a.id
+    </select>
     
 
 
