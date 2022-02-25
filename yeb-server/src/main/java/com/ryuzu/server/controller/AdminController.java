@@ -8,7 +8,6 @@ import com.ryuzu.server.service.IAdminRoleService;
 import com.ryuzu.server.service.IAdminService;
 import com.ryuzu.server.service.IRoleService;
 import io.swagger.annotations.ApiOperation;
-import io.swagger.models.auth.In;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
