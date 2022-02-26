@@ -21,6 +21,7 @@ import java.util.Scanner;
 
 /**
  * 执行 main 方法控制台输入模块表名回车自动生成对应项目目录中
+ * t_admin,t_admin_role,t_appraise,t_department,t_employee,t_employee_ec,t_employee_remove,t_employee_train,t_joblevel,t_mail_log,t_menu,t_menu_role,t_nation,t_oplog,t_politics_status,t_position,t_role,t_salary,t_salary_adjust,t_sys_msg,t_sys_msg_content
  *
  * @author Ryuzu
  * @date 2022/2/14 21:45

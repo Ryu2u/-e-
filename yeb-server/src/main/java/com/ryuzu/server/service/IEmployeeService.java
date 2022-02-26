@@ -3,6 +3,7 @@ package com.ryuzu.server.service;
 import com.ryuzu.server.domain.Employee;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.ryuzu.server.domain.PageRespBean;
+import com.ryuzu.server.domain.RespBean;
 
 import java.time.LocalDate;
 
@@ -17,4 +18,6 @@ import java.time.LocalDate;
 public interface IEmployeeService extends IService<Employee> {
 
     PageRespBean getAllEmployee(Integer pageNo, Integer pageSize, Employee employee, LocalDate[] beginDateScope);
+
+    RespBean getMaxWordID();
 }
