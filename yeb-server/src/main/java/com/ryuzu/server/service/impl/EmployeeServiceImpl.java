@@ -1,5 +1,6 @@
 package com.ryuzu.server.service.impl;
 
+import cn.afterturn.easypoi.excel.entity.ExportParams;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
@@ -65,6 +66,12 @@ public class EmployeeServiceImpl extends ServiceImpl<EmployeeMapper, Employee> i
             return RespBean.success("添加成功!");
         }
         return RespBean.error("添加失败!");
+    }
+
+    @Override
+    public List<Employee> exportEmployee(Integer id) {
+       return employeeMapper.exportEmployee(id);
+
     }
 }
 

@@ -54,7 +54,7 @@
         </collection>
         <collection property="position" ofType="com.ryuzu.server.domain.Position">
             <id column="pid" property="id"/>
-            <result column="pnname" property="name"/>
+            <result column="pname" property="name"/>
         </collection>
     </resultMap>
 
@@ -75,7 +75,7 @@
         ps.id AS psid,
         ps.name AS psname,
         p.id AS pid,
-        p.name AS panme
+        p.name AS pname
         FROM t_employee e,
         t_nation n,
         t_department d,
@@ -122,6 +122,35 @@
             AND
             #{beginDateScope[1]}
         </if>
+        ORDER BY e.id
+    </select>
+
+    <select id="exportEmployee" resultMap="AllEmployee">
+        SELECT e.*,
+               n.id    AS nid,
+               n.NAME  AS nname,
+               d.id    AS did,
+               d.name  AS dname,
+               j.id    AS jid,
+               j.name  AS jname,
+               ps.id   AS psid,
+               ps.name AS psname,
+               p.id    AS pid,
+               p.name  AS pname
+        FROM t_employee e,
+             t_nation n,
+             t_department d,
+             t_joblevel j,
+             t_politics_status ps,
+             t_position p
+        WHERE e.nationId = n.id
+          AND e.departmentId = d.id
+          AND e.jobLevelId = j.id
+          AND e.posId = p.id
+          AND e.politicId = ps.id
+          <if test="id != null">
+              AND e.id = #{id}
+          </if>
         ORDER BY e.id
     </select>
 

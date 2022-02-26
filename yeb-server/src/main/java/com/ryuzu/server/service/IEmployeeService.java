@@ -4,8 +4,10 @@ import com.ryuzu.server.domain.Employee;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.ryuzu.server.domain.PageRespBean;
 import com.ryuzu.server.domain.RespBean;
+import org.apache.commons.math3.analysis.function.Exp;
 
 import java.time.LocalDate;
+import java.util.List;
 
 /**
  * <p>
@@ -22,4 +24,6 @@ public interface IEmployeeService extends IService<Employee> {
     RespBean getMaxWordID();
 
     RespBean addEmployee(Employee employee);
+
+    List<Employee> exportEmployee(Integer id);
 }

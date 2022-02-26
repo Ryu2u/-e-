@@ -22,15 +22,49 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="986f13e1-aeb7-4342-9b3f-62ed727539bf" name="Default Changelist" comment="员工查询功能">
+    <list default="true" id="986f13e1-aeb7-4342-9b3f-62ed727539bf" name="Default Changelist" comment="员工添加和删除功能">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cn_afterturn_easypoi_annotation_4_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cn_afterturn_easypoi_base_4_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cn_afterturn_easypoi_spring_boot_starter_4_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cn_afterturn_easypoi_web_4_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_virtuald_curvesapi_1_06.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_3_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_math3_3_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_4_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_4_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_4_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_3_1_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/domain/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/domain/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/domain/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/domain/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/domain/Joblevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/domain/Joblevel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/domain/Nation.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/domain/Nation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/domain/PoliticsStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/domain/PoliticsStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/domain/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/domain/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/mapper/EmployeeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/mapper/EmployeeMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/service/IEmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/service/IEmployeeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/service/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/service/impl/EmployeeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/resources/mapper/EmployeeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/resources/mapper/EmployeeMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/EmployeeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/controller/EmployeeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Department.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Department.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Joblevel.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Joblevel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Nation.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Nation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/PoliticsStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/PoliticsStatus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/domain/Position.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/mapper/EmployeeMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/mapper/EmployeeMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/IEmployeeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/IEmployeeService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/impl/EmployeeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/impl/EmployeeServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/mapper/EmployeeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/mapper/EmployeeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/yeb-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/yeb-server.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -262,7 +296,7 @@
       <workItem from="1645631101818" duration="4000" />
       <workItem from="1645674050481" duration="4735000" />
       <workItem from="1645682543496" duration="18182000" />
-      <workItem from="1645765187841" duration="28140000" />
+      <workItem from="1645765187841" duration="39659000" />
     </task>
     <task id="LOCAL-00001" summary="yeb-service">
       <created>1644917450833</created>
@@ -355,7 +389,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645846252084</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="员工添加和删除功能">
+      <created>1645852783638</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1645852783638</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -386,7 +427,8 @@
     <MESSAGE value="查询全部的部门" />
     <MESSAGE value="操作员功能实现" />
     <MESSAGE value="员工查询功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="员工查询功能" />
+    <MESSAGE value="员工添加和删除功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="员工添加和删除功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
