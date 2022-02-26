@@ -20,4 +20,6 @@ public interface IEmployeeService extends IService<Employee> {
     PageRespBean getAllEmployee(Integer pageNo, Integer pageSize, Employee employee, LocalDate[] beginDateScope);
 
     RespBean getMaxWordID();
+
+    RespBean addEmployee(Employee employee);
 }

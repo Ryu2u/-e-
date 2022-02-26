@@ -42,10 +42,10 @@ public class EmployeeController {
 
     @ApiOperation(value = "查询所有员工(分页)")
     @GetMapping("/")
-    public PageRespBean getAllEmployee(@RequestParam(defaultValue = "1") Integer pageNo,
-                                       @RequestParam(defaultValue = "10") Integer pageSize,
-                                       Employee employee,
-                                       LocalDate[] beginDateScope) {
+    public PageRespBean getAllEmployeeByPage(@RequestParam(defaultValue = "1") Integer pageNo,
+                                             @RequestParam(defaultValue = "10") Integer pageSize,
+                                             Employee employee,
+                                             LocalDate[] beginDateScope) {
         return employeeService.getAllEmployee(pageNo, pageSize, employee, beginDateScope);
     }
 
@@ -74,14 +74,40 @@ public class EmployeeController {
     }
 
     @ApiOperation(value = "查询所有部门")
-    @GetMapping("/")
+    @GetMapping("/department")
     public List<Department> getAllDepartment() {
         return departmentService.getAllDepartment(-1);
     }
 
     @ApiOperation(value = "获取最大工号")
     @GetMapping("/maxWorkID")
-    public RespBean getMaxWorkID(){
+    public RespBean getMaxWorkID() {
         return employeeService.getMaxWordID();
     }
+
+    @ApiOperation(value = "添加员工")
+    @PostMapping("/")
+    public RespBean insertEmployee(@RequestBody Employee employee) {
+        return employeeService.addEmployee(employee);
+    }
+
+    @ApiOperation(value = "更新员工")
+    @PutMapping("/")
+    public RespBean updateEmployee(@RequestBody Employee employee) {
+        if (employeeService.updateById(employee)) {
+            return RespBean.success("更新成功!");
+        }
+        return RespBean.error("更新失败!");
+    }
+
+    @ApiOperation(value = "删除员工")
+    @DeleteMapping("/{id}")
+    public RespBean deleteEmployee(@PathVariable Integer id){
+        if (employeeService.removeById(id)) {
+            return RespBean.success("删除成功!");
+        }
+        return RespBean.error("删除失败!");
+
+    }
+
 }
