@@ -80,8 +80,6 @@ public class Swagger2Config {
         authorization[0] = authorizationScope;
         result.add(new SecurityReference("Authorization", authorization));
         return result;
-
-
     }
 
 

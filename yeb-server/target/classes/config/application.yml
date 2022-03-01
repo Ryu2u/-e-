@@ -36,7 +36,11 @@ spring:
         max-idle: 200
         min-idle: 4
     timeout: 10000
-
+  rabbitmq:
+    host: 192.168.153.128
+    port: 5672
+    username: admin
+    password: 123
 # mybatis-plus配置
 mybatis-plus:
   mapper-locations: classpath*:/mapper/*Mapper.xml

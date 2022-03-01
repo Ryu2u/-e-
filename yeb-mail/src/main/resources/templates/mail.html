@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>mail</title>
+</head>
+<body>
+    欢迎<span th:text="${name}"></span>加入我们公司,您的信息如下:
+    <table border="1">
+      <tr>
+        <th>姓名</th>
+        <td th:text="${name}"></td>
+      </tr>
+      <tr>
+        <th>职位</th>
+        <td th:text="${posName}"></td>
+      </tr>
+      <tr>
+        <th>职称</th>
+        <td th:text="${joblevelName}"></td>
+      </tr>
+      <tr>
+        <th>部门</th>
+        <td th:text="${departmentName}"></td>
+      </tr>
+    </table>
+<p>
+  我们公司的工作宗旨是严格,创新,诚信,您的加入将为我们带来新鲜的血液,带来创新的思维,以及我们树立良好的公司形象!
+  我们希望在以后的工作共我们能够齐心协力,与时俱进,团队协作!同时也祝您在本公司,工作愉快,实现自己的人生价值!
+  希望在未来的日子里,携手共进!
+</p>
+</body>
+</html>

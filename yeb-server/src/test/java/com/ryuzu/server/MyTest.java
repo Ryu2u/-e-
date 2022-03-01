@@ -1,12 +1,14 @@
 package com.ryuzu.server;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.ryuzu.server.config.RabbitConfig;
 import com.ryuzu.server.domain.Menu;
 import com.ryuzu.server.domain.MenuRole;
 import com.ryuzu.server.domain.Role;
 import com.ryuzu.server.mapper.MenuRoleMapper;
 import com.ryuzu.server.service.IMenuService;
 import org.junit.jupiter.api.Test;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 
@@ -71,6 +73,14 @@ public class MyTest {
         LocalDate parse = LocalDate.parse("2012-12-12", DateTimeFormatter.ofPattern("yyyy-MM-dd"));
         System.out.println(parse);
 
+    }
+
+    @Resource
+    private RabbitTemplate template;
+
+    @Test
+    public void test05(){
+        template.convertAndSend(RabbitConfig.EXCHANGE_NAME, RabbitConfig.ROUTING_KEY, "你好");
     }
 
 

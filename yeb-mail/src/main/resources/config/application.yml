@@ -1,0 +1,63 @@
+server:
+  #端口
+  port: 8082
+#spring:
+#  #邮件配置
+#  mail:
+#    #邮件服务器地址
+#    host: smtp.exmail.qq.com
+#    #协议
+#    protocol: smtp
+#    #编码格式
+#    default-encoding: utf-8
+#    #授权码
+#    password: qluxkhjketisbddj
+#    #发送者邮箱地址
+#    username: ryu2u@qq.com
+#    #端口(不同邮箱端口号不同)
+#    port: 465
+#    properties:
+#      mail:
+#        smtp:
+#          ssl:
+#            enable: true
+spring:
+  mail:
+    host: smtp.qq.com
+    username: ryu2u@qq.com
+    password: qluxkhjketisbddj
+    port: 465
+    protocol: smtp
+    default-encoding: utf-8
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+          ssl:
+            enable: true
+          socketFactory:
+            port: 465
+            class: javax.net.ssl.SSLSocketFactory
+  rabbitmq:
+    host: 192.168.153.128
+    port: 5672
+    username: admin
+    password: 123
+  datasource:
+    url: jdbc:mysql//localhost:3306/yeb?useUnicode=true&characterEncoding=utf-8&serverTimzone=GMT%2B8
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #jwt 配置
+jwt:
+   # JWT存储的请求头
+  tokenHeader: Authorization
+   # JWT 加解密使用的秘钥
+  secret: yeb-secret
+   # JWT的超期限时间(60*60*24)
+  expiration: 604800
+      # JWT 负载中拿到开头
+  tokenHead: Bearer

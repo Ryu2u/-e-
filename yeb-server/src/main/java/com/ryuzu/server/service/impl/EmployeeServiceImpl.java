@@ -1,15 +1,17 @@
 package com.ryuzu.server.service.impl;
 
-import cn.afterturn.easypoi.excel.entity.ExportParams;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+
+import com.ryuzu.server.config.RabbitConfig;
 import com.ryuzu.server.domain.Employee;
 import com.ryuzu.server.domain.PageRespBean;
 import com.ryuzu.server.domain.RespBean;
 import com.ryuzu.server.mapper.EmployeeMapper;
 import com.ryuzu.server.service.IEmployeeService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -32,6 +34,9 @@ public class EmployeeServiceImpl extends ServiceImpl<EmployeeMapper, Employee> i
 
     @Resource
     private EmployeeMapper employeeMapper;
+
+    @Resource
+    private RabbitTemplate rabbitTemplate;
 
     @Override
     public PageRespBean getAllEmployee(Integer pageNo, Integer pageSize, Employee employee, LocalDate[] beginDateScope) {
@@ -56,6 +61,7 @@ public class EmployeeServiceImpl extends ServiceImpl<EmployeeMapper, Employee> i
 
     @Override
     public RespBean addEmployee(Employee employee) {
+        // 处理合同日期 保留两位小数
         LocalDate beginContract = employee.getBeginContract();
         LocalDate endContract = employee.getEndContract();
         long days = beginContract.until(endContract, ChronoUnit.DAYS);
@@ -63,6 +69,8 @@ public class EmployeeServiceImpl extends ServiceImpl<EmployeeMapper, Employee> i
         double contractTerm = Double.parseDouble(decimalFormat.format(days / 365.00));
         employee.setContractTerm(contractTerm);
         if (employeeMapper.insert(employee) == 1) {
+            Employee emp = employeeMapper.exportEmployee(employee.getId()).get(0);
+            rabbitTemplate.convertAndSend(RabbitConfig.EXCHANGE_NAME, RabbitConfig.ROUTING_KEY, emp);
             return RespBean.success("添加成功!");
         }
         return RespBean.error("添加失败!");
