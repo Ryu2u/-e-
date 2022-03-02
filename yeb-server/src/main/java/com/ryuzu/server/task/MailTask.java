@@ -18,6 +18,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 /**
+ * 邮件的定时任务
  * @author Ryuzu
  * @date 2022/3/2 15:25
  */
@@ -33,6 +34,10 @@ public class MailTask {
     @Resource
     private RabbitTemplate rabbitTemplate;
 
+    /**
+     * 定时任务
+     *  每十秒发送一次
+     */
     @Scheduled(cron = "0/10 * * * * ?")
     public void mailTask() {
         List<MailLog> mailLogList = mailLogService.list(new QueryWrapper<MailLog>().eq("status", 0).lt("tryTime", LocalDateTime.now()));

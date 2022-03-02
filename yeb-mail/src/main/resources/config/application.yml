@@ -41,6 +41,7 @@ spring:
           socketFactory:
             port: 465
             class: javax.net.ssl.SSLSocketFactory
+
   rabbitmq:
     host: 192.168.153.128
     port: 5672
@@ -50,11 +51,27 @@ spring:
     publisher-returns: true
     # 消息确认
     publisher-confirm-type: correlated
+    listener:
+      direct:
+        acknowledge-mode: manual
+
   datasource:
     url: jdbc:mysql://localhost:3306/yeb?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
     username: root
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
+
+  # redis 配置
+  redis:
+    host: 192.168.153.128
+    port: 6379
+    password: 152833
+    lettuce:
+      pool:
+        max-active: 1024
+        max-wait: 10000
+        max-idle: 200
+        min-idle: 4
 
 # mybatis-plus配置
 mybatis-plus:

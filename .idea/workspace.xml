@@ -22,25 +22,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="986f13e1-aeb7-4342-9b3f-62ed727539bf" name="Default Changelist" comment="邮件发送的实现">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/domain/MailConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/task/MailTask.java" afterDir="false" />
+    <list default="true" id="986f13e1-aeb7-4342-9b3f-62ed727539bf" name="Default Changelist" comment="使用rabbitmq的发布确认 &#10;邮件发送失败的回调实现">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-mail/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-mail/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yeb-mail/src/main/java/com/ryuzu/mail/MailReceive.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-mail/src/main/java/com/ryuzu/mail/MailReceive.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yeb-mail/src/main/resources/config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-mail/src/main/resources/config/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-mail/src/test/java/com/ryuzu/mail/TestApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-mail/src/test/java/com/ryuzu/mail/TestApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-mail/yeb-mail.iml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-mail/yeb-mail.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/YebApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/YebApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/config/RabbitConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/config/RabbitConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/config/security/JwtTokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/config/security/JwtTokenUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/config/security/RestfulAccessDeniedHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/config/security/RestfulAccessDeniedHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/config/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/config/security/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/service/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/service/impl/EmployeeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/util/DateConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/util/DateConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/resources/config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/resources/config/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/impl/EmployeeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/server/service/impl/EmployeeServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/task/MailTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/ryuzu/server/task/MailTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/YebApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/com/ryuzu/YebApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/target/classes/config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/target/classes/config/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -259,8 +248,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.YebApplication" />
         <item itemvalue="Spring Boot.MailApplication" />
+        <item itemvalue="Spring Boot.YebApplication" />
         <item itemvalue="JUnit.TestApp.testLocalDatetime" />
         <item itemvalue="JUnit.MyTest.test05" />
         <item itemvalue="JUnit.TestApp.test02" />
@@ -301,7 +290,7 @@
       <workItem from="1646036262539" duration="163000" />
       <workItem from="1646056615734" duration="240000" />
       <workItem from="1646135416185" duration="15262000" />
-      <workItem from="1646197991629" duration="9532000" />
+      <workItem from="1646197991629" duration="12461000" />
     </task>
     <task id="LOCAL-00001" summary="yeb-service">
       <created>1644917450833</created>
@@ -415,7 +404,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646151037367</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="使用rabbitmq的发布确认 &#10;邮件发送失败的回调实现">
+      <created>1646208369229</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1646208369229</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -449,7 +445,8 @@
     <MESSAGE value="员工添加和删除功能" />
     <MESSAGE value="导入和导出excel表格的实现" />
     <MESSAGE value="邮件发送的实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="邮件发送的实现" />
+    <MESSAGE value="使用rabbitmq的发布确认 &#10;邮件发送失败的回调实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用rabbitmq的发布确认 &#10;邮件发送失败的回调实现" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -89,7 +89,8 @@ public class EmployeeServiceImpl extends ServiceImpl<EmployeeMapper, Employee> i
 
             mailLogService.save(mailLog);
 
-            rabbitTemplate.convertAndSend("RabbitConfig.EXCHANGE_NAME", RabbitConfig.ROUTING_KEY, emp, new CorrelationData(mailLog.getMsgId()));
+            //rabbitTemplate.convertAndSend("RabbitConfig.EXCHANGE_NAME", RabbitConfig.ROUTING_KEY, emp, new CorrelationData(mailLog.getMsgId()));
+            rabbitTemplate.convertAndSend(RabbitConfig.EXCHANGE_NAME, RabbitConfig.ROUTING_KEY, emp, new CorrelationData(mailLog.getMsgId()));
             return RespBean.success("添加成功!");
         }
         return RespBean.error("添加失败!");
