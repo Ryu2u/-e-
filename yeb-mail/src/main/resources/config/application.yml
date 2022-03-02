@@ -46,11 +46,24 @@ spring:
     port: 5672
     username: admin
     password: 123
+    # 消息回退
+    publisher-returns: true
+    # 消息确认
+    publisher-confirm-type: correlated
   datasource:
-    url: jdbc:mysql//localhost:3306/yeb?useUnicode=true&characterEncoding=utf-8&serverTimzone=GMT%2B8
+    url: jdbc:mysql://localhost:3306/yeb?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
     username: root
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
+
+# mybatis-plus配置
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/*Mapper.xml
+  # 配置Mybatis数据返回类型别名
+  type-aliases-package: com.ryuzu.server.domain
+  configuration:
+    # 自动驼峰命名
+    map-underscore-to-camel-case: false
     #jwt 配置
 jwt:
    # JWT存储的请求头

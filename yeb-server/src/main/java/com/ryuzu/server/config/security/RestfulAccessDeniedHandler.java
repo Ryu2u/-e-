@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 /**
- *
+ * 权限不足时
  * @author Ryuzu
  * @date 2022/2/19 16:29
  */

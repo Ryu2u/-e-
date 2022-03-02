@@ -2,8 +2,13 @@ package com.ryuzu.mail;
 
 
 import com.sun.mail.util.MailSSLSocketFactory;
+import org.junit.Test;
+import org.springframework.format.datetime.DateFormatter;
 
 import java.security.GeneralSecurityException;
+import java.text.DateFormat;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.Properties;
 
@@ -115,6 +120,20 @@ public class TestApp {
         transport.close();
 
 
+    }
+
+    @Test
+    public void testLocalDatetime(){
+        LocalDateTime now = LocalDateTime.now();
+        String formatTime = now.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+        String format = LocalDateTime.now().plusMinutes(10).format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+        System.out.println(format);
+
+        LocalDateTime plusDays = now.plusDays(3);
+
+        System.out.println(now);
+        System.out.println(formatTime);
+        System.out.println(plusDays);
     }
 
 }

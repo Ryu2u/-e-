@@ -5,21 +5,23 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 
 import com.ryuzu.server.config.RabbitConfig;
-import com.ryuzu.server.domain.Employee;
-import com.ryuzu.server.domain.PageRespBean;
-import com.ryuzu.server.domain.RespBean;
+import com.ryuzu.server.domain.*;
 import com.ryuzu.server.mapper.EmployeeMapper;
 import com.ryuzu.server.service.IEmployeeService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.ryuzu.server.service.IMailLogService;
+import org.springframework.amqp.rabbit.connection.CorrelationData;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.text.DecimalFormat;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 
 /**
  * <p>
@@ -37,6 +39,9 @@ public class EmployeeServiceImpl extends ServiceImpl<EmployeeMapper, Employee> i
 
     @Resource
     private RabbitTemplate rabbitTemplate;
+
+    @Resource
+    private IMailLogService mailLogService;
 
     @Override
     public PageRespBean getAllEmployee(Integer pageNo, Integer pageSize, Employee employee, LocalDate[] beginDateScope) {
@@ -70,7 +75,21 @@ public class EmployeeServiceImpl extends ServiceImpl<EmployeeMapper, Employee> i
         employee.setContractTerm(contractTerm);
         if (employeeMapper.insert(employee) == 1) {
             Employee emp = employeeMapper.exportEmployee(employee.getId()).get(0);
-            rabbitTemplate.convertAndSend(RabbitConfig.EXCHANGE_NAME, RabbitConfig.ROUTING_KEY, emp);
+
+            MailLog mailLog = new MailLog();
+            mailLog.setMsgId(UUID.randomUUID().toString());
+            mailLog.setEid(emp.getId());
+            mailLog.setStatus(MailConstants.DELIVERING);
+            mailLog.setRouteKey(RabbitConfig.ROUTING_KEY);
+            mailLog.setExchange(RabbitConfig.EXCHANGE_NAME);
+            mailLog.setCount(0);
+            mailLog.setTryTime(LocalDateTime.now().plusMinutes(MailConstants.OVERTIME));
+            mailLog.setCreateTime(LocalDateTime.now());
+            mailLog.setUpdateTime(LocalDateTime.now());
+
+            mailLogService.save(mailLog);
+
+            rabbitTemplate.convertAndSend("RabbitConfig.EXCHANGE_NAME", RabbitConfig.ROUTING_KEY, emp, new CorrelationData(mailLog.getMsgId()));
             return RespBean.success("添加成功!");
         }
         return RespBean.error("添加失败!");

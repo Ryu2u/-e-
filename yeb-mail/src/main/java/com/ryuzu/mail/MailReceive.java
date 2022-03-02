@@ -26,7 +26,7 @@ import java.util.Map;
  */
 @Component
 public class MailReceive {
-    private static final Logger logger = LoggerFactory.getLogger(MailReceive.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(MailReceive.class);
 
     @Resource
     private JavaMailSender javaMailSender;
@@ -37,7 +37,7 @@ public class MailReceive {
 
     @RabbitListener(queues = RabbitConfig.QUEUE_NAME)
     public void handler(Employee employee){
-        System.out.println("=============正在发送邮箱==================");
+
         MimeMessage msg = javaMailSender.createMimeMessage();
         MimeMessageHelper helper = new MimeMessageHelper(msg);
         try {
@@ -60,6 +60,8 @@ public class MailReceive {
             String mail = templateEngine.process("mail", context);
             helper.setText(mail, true);
             javaMailSender.send(msg);
+
+
         } catch (MessagingException e) {
             e.printStackTrace();
         }

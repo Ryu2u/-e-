@@ -10,6 +10,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * jwt 获取token工具类
  * @author Ryuzu
  * @date 2022/2/18 14:48
  */

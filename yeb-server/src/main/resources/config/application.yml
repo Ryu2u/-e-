@@ -41,6 +41,9 @@ spring:
     port: 5672
     username: admin
     password: 123
+    publisher-confirm-type: correlated
+    publisher-returns: true
+
 # mybatis-plus配置
 mybatis-plus:
   mapper-locations: classpath*:/mapper/*Mapper.xml
